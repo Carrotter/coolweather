@@ -10,6 +10,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //禁止Gradle检查图片的合法性
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
     }
     buildTypes {
         release {
